@@ -68,6 +68,6 @@ If your input image borders the canvas edge, your result might look cropped. If 
 
 ### Additional Tips:
 
-1. Generation settings are saved in the layers, press __any button marked ♻️__ to copy the settings from the selected layer into your docker. This works for any tab, regardless of what tab you used to generate. The button at the top copies __all settings__, _seed included_!
+1. Generation settings are saved in the layers. Press __any button marked ♻️__ to copy the settings from the selected layer into your docker. This works for any tab, regardless of what tab you used to generate. The button at the top copies __all settings__, _seed included_!
 2. If you miss a feature from the WebUI, open a browser tab. You can swap models on that page and it will work the same inside Krita/Photoshop. 
 3. All outputs are still saved as configured in the WebUI, i.e., `output/txt2img-images` for txt2img by default. This can be useful if you need the prompt from an old output but you renamed the layer/merged it with something else.
