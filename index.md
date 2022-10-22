@@ -36,9 +36,9 @@ A Plugin for Photoshop and Krita that can interface with [AUTOMATIC1111s Stable 
 * alternatively, you can also download the release and install via `Tools - Scripts - Import Python Plugin from file`
 
 #### Photoshop
-1. Download the latest release: https://internationaltd.github.io/defuser/build/defuser-uxp.ccx
+1. [Download the latest release](https://internationaltd.github.io/defuser/build/defuser-uxp.ccx)
 2. Open the file. Creative Cloud should prompt you to install.
-3. Open `C:\Windows\System32\drivers\etc\hosts` in a text editor and add the line `127.0.0.1 localhost.tech`. this is a workaround for an Adobe Photoshop bug that prevents connections to localhost from plugins on some machines.  Sorry!
+3. Open `C:\Windows\System32\drivers\etc\hosts` in a text editor and add the line `127.0.0.1 localhost.tech` this is a workaround for an Adobe Photoshop bug that prevents connections to localhost from plugins on some machines.  Sorry!
 4. Open the Docker under `Plugins - Defuser` and start proomting!
 
 ### Quick Test
