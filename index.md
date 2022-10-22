@@ -28,7 +28,7 @@ A Plugin for Photoshop and Krita that can interface with [AUTOMATIC1111s Stable 
 ## Installation
 
 #### Krita
-1. Copy this url to your clipboard: `REPLACEME`
+1. Copy this url to your clipboard: ` `
 2. With Krita open, go to `Tools - Scripts - Import Python Plugin from Web` and paste the link
 3. Hit yes to activate, then restart Krita
 4. Open the docker from `Settings - Dockers - Defuser` and start proomting!
@@ -37,8 +37,8 @@ A Plugin for Photoshop and Krita that can interface with [AUTOMATIC1111s Stable 
 
 #### Photoshop
 1. Download the latest release: `REPLACEME`
-2. Open the file. Creative Cloud should pop up and prompt you to install. If it hangs/freezes before that, just double-click the file again, this is an Adobe CC bug.
-3. Open `C:\Windows\System32\drivers\etc\hosts` in a text editor and add the line `127.0.0.1 localhost.tech` to circumvent an Adobe Photoshop bug that prevents connections to localhost from plugins. 
+2. Open the file. Creative Cloud should prompt you to install.
+3. Open `C:\Windows\System32\drivers\etc\hosts` in a text editor and add the line `127.0.0.1 localhost.tech`. this is a workaround for an Adobe Photoshop bug that prevents connections to localhost from plugins on some machines.  Sorry!
 4. Open the Docker under `Plugins - Defuser` and start proomting!
 
 ### Quick Test
@@ -50,10 +50,10 @@ To test the installation, we are going to create any size document, then an exac
 # Usage
 
 ### Start the WebUI with webui_user.bat as usual and just open Krita or Photoshop to generate.
-The plugin will take care of requirements automatically for you. For example, it might create selections and inpainting masks and it will switch to an appropriate tool.
+Defuser will take care of requirements automatically for you. For example, it creates selections and inpainting masks and it will switch to an appropriate tool.
 
 ### txt2img:
-Defuser will never stretch or crop generated images. This means that if you press generate when no selection is made, Defuser defaults to a 512x512 selection. If you want a different aspect ratio, make a rough selection and press generate to snap to the nearest increment quickly. You don't need to waste time trying to be pixel-perfect yourself.
+Defuser will never stretch or crop generated images. This means that if you press generate when no selection is made, Defuser defaults to a 512x512 selection. If you want a different aspect ratio, make a rough selection and press generate to snap to the nearest increment quickly. You don't need to waste time trying to be pixel-perfect yourself. This goes for the other modes as well.
 
 ### img2img:
 If you want to transfer styles (e.g. turn a pencil sketch into watercolor), you should run
