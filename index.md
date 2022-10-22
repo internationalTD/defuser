@@ -5,7 +5,9 @@ current release: `v0.0.1-alpha`
 release date: `22.10.2022`
 <br/>
 A Plugin for Photoshop and Krita that can interface with [AUTOMATIC1111s Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui). 
-<br/>__You won't need to switch to another WebUI or modify your existing installation in any way.__
+<br/>__You will not need to switch to another WebUI or modify your existing installation in any way.__
+
+Caveat: in this pre-release, there is no support for extensions (except for wildcards) or custom scripts, because they add components to the WebUI. This issue is the top priority right now and will be fixed in the coming day(s).
 
 ## Features
 * text to image
@@ -18,6 +20,7 @@ A Plugin for Photoshop and Krita that can interface with [AUTOMATIC1111s Stable 
     * __NO__ context switching just because you needed a new batch of images
 
 #### Planned features:
+* Support for extensions and custom scripts
 * upscaling support ( for now, do it in the WebUI)
 * further workflow improvements
 * standalone face fix
@@ -46,6 +49,8 @@ To test the installation, we are going to create any size document, then an exac
 
 1. Create a new document.
 2. Press the "Generate" button and follow instructions, if any.
+
+
 
 # Usage
 
