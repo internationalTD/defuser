@@ -1,10 +1,10 @@
-# Defuser
+# <img src="docs/splash1.png" alt="alt text" title="image Title" height="256"/><img src="docs/splash2.png" alt="alt text" title="image Title" height="256"/>
 
 current release: `v0.0.1-alpha`
 <br/>
 release date: `22.10.2022`
 <br/>
-A Plugin for Photoshop and Krita that can interface with [AUTOMATIC1111s Stable Diffusion WebUI host](https://github.com/AUTOMATIC1111/stable-diffusion-webui). 
+A Plugin for Photoshop and Krita that can interface with [AUTOMATIC1111s Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui). 
 <br/>__You won't need to switch to another WebUI or modify your existing installation in any way.__
 
 ## Features
@@ -46,6 +46,7 @@ To test the installation, we are going to create any size document, then an exac
 
 1. Create a new document.
 2. Press the "Generate" button and follow instructions, if any.
+
 # Usage
 
 ### Start the WebUI with webui_user.bat as usual and just open Krita or Photoshop to generate.
