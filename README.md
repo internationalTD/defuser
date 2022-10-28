@@ -1,8 +1,8 @@
 # <img src="docs/splash1.png" alt="alt text" title="image Title" height="256"/><img src="docs/splash2.png" alt="alt text" title="image Title" height="256"/>
 
-current release: `v0.0.1-alpha`
+current release: `v0.0.2-alpha`
 <br/>
-release date: `22.10.2022`
+release date: `28.10.2022`
 <br/>
 A Plugin for Photoshop and Krita that can interface with [AUTOMATIC1111s Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui). 
 <br/>__You will not need to switch to another WebUI or modify your existing installation in any way.__
@@ -30,6 +30,10 @@ Caveat: in this pre-release, there is no support for extensions (except for wild
 
 ## Installation
 
+In case you haven't already, install [AUTOMATIC1111s Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+
+Wait for it launch before you start Krita or Photoshop, or the plugin panel will be empty.
+
 #### Krita
 1. Copy this url to your clipboard: `https://internationaltd.github.io/defuser/build/defuser-pykrita.zip`
 2. With Krita open, go to `Tools - Scripts - Import Python Plugin from Web` and paste the link
@@ -39,10 +43,21 @@ Caveat: in this pre-release, there is no support for extensions (except for wild
 * alternatively, you can also download the release and install via `Tools - Scripts - Import Python Plugin from file`
 
 #### Photoshop
-1. [Download the latest release](https://internationaltd.github.io/defuser/build/defuser-uxp.ccx)
+1. [Download the latest release](https://internationaltd.github.io/defuser/build/defuser_PS.ccx)
 2. Open the file. Creative Cloud should prompt you to install.
 3. Open `C:\Windows\System32\drivers\etc\hosts` in a text editor and add the line `127.0.0.1 localhost.tech` this is a workaround for an Adobe Photoshop bug that prevents connections to localhost from plugins on some machines.  Sorry!
 4. Open the Docker under `Plugins - Defuser` and start proomting!
+
+### Photoshop - Manual (alternative) install - thanks anon!
+1. [Download the latest release](https://internationaltd.github.io/defuser/build/defuser_PS.ccx)
+2. Open the file as an archive in 7-zip/WinRAR/what have you, and extract the contents to `%APPDATA%\Adobe\UXP\Plugins\External\defuser_0.0.2`
+3. Open `%APPDATA%\Adobe\UXP\PluginsInfo\v1\PS.json` and 
+
+    this is .json format, so:
+
+
+    * __If you have other plugins installed__ add a __comma__ before the `]}` at the end of the file, then paste `{"hostMinVersion":"22.0.0","name":"Defuser","path":"$localPlugins\\External\\defuser_0.0.2","pluginId":"defuser","status":"enabled","type":"uxp","versionString":"0.0.2"}` 
+    * __If you don't, and had to create that file__, paste the following: `{"plugins":[{"hostMinVersion":"22.0.0","name":"Defuser","path":"$localPlugins\\External\\defuser_0.0.2","pluginId":"defuser","status":"enabled","type":"uxp","versionString":"0.0.2"}]}`
 
 ### Quick Test
 To test the installation, we are going to create any size document, then an exactly 512x512 selection, and finally generate a txt2img output. Here is how to do that:
@@ -70,7 +85,7 @@ Result quality varies wildly based on the `masked_content` parameter.
 Experiment with different brush hardnesses and `mask_blur` settings. 
 
 ### Outpainting:
-If your input image borders the canvas edge, your result might look cropped. If you move the resulting layer, or the canvas, the result will be in frame. This behavior will be improved in a future release.
+If your input image borders the canvas edge, your result might seem cropped. You need to move the resulting layer, or the canvas, to get the result into frame. This behavior will be improved in a future release.
 
 ### Additional Tips:
 
