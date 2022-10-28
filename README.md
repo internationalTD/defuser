@@ -21,7 +21,7 @@ Changes in this version: `
     * __NO__ context switching just because you needed a new batch of images
 
 #### Planned features:
-* Support for extensions and custom scripts
+* Better script usage support
 * upscaling support ( for now, do it in the WebUI)
 * further workflow improvements
 * standalone face fix
