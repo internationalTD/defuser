@@ -1,14 +1,20 @@
 # <img src="docs/splash1.png" alt="alt text" title="image Title" height="256"/><img src="docs/splash2.png" alt="alt text" title="image Title" height="256"/>
 
-current release: `v0.0.2-alpha`
+current release: `v0.0.2-alpha2`
 <br/>
-release date: `28.10.2022`
+release date: `01.11.2022`
 <br/>
 A Plugin for Photoshop and Krita that can interface with [AUTOMATIC1111s Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui). 
 <br/>__You will not need to switch to another WebUI or modify your existing installation in any way.__
 
-Changes in this version: `
--Rewrote the UI renderer, it should not error anymore because users have different Extensions/Scripts installed to their WebUI`
+Changelog: 
+```
+alpha2:
+-Fix candidate for Krita showing an empty UI because of a bad request in the plugin
+
+v0.0.2:
+-Rewrote the UI renderer, it should not error anymore because users have different Extensions/Scripts installed to their WebUI
+```
 
 ## Features
 * text to image
